@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eco Espaço &amp; Lazer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Espaço para festas com jardim tropical na Casa Verde Alta, Zona Norte de São Paulo. Eventos de até 150 convidados, fins de semana a partir de R$ 1.200. Agende sua visita pelo WhatsApp.">
+<meta name="theme-color" content="#f6f3ee">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Eco Espaço & Lazer · Clima de chácara sem pegar estrada">
+<meta property="og:description" content="Quintal tropical para festas de até 150 convidados na Casa Verde Alta, Zona Norte de SP. Fins de semana a partir de R$ 1.200.">
+<meta property="og:image" content="img/og-capa.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e2320'/%3E%3Cg fill='none' stroke='%23d9a64b' stroke-width='3.2' stroke-linecap='round'%3E%3Cpath d='M33 56c1-12 0-24-2-33'/%3E%3Cpath d='M31 23c-6-6-14-6-20-2'/%3E%3Cpath d='M31 23c-3-8-10-12-17-12'/%3E%3Cpath d='M31 23c2-8 8-13 16-13'/%3E%3Cpath d='M31 23c6-4 15-3 21 3'/%3E%3Cpath d='M31 23c1 6-2 12-7 16'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;600;700&display=swap">
+<link rel="preload" as="image" href="img/hero-jardim-palmeira-640.jpg" imagesrcset="img/hero-jardim-palmeira-640.jpg 640w, img/hero-jardim-palmeira.jpg 900w" imagesizes="(max-width: 860px) 100vw, 45vw">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "name": "Eco Espaço & Lazer",
+  "description": "Espaço para festas e eventos de até 150 convidados, com jardim tropical, salão coberto e área gourmet com churrasqueira e forno a lenha na Zona Norte de São Paulo.",
+  "telephone": "+55 11 97338-2873",
+  "email": "ecoespacoelazer@gmail.com",
+  "image": "img/og-capa.jpg",
+  "maximumAttendeeCapacity": 150,
+  "priceRange": "A partir de R$ 1.200",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Alexandre de Miranda, 41",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "02565-060",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Zona Norte de São Paulo",
+  "sameAs": ["https://www.facebook.com/ecoespacoelazer"]
+}
+</script>
+<style>
+/* Layout: papel claro e carvão, com o verde só nas plantas das fotos. Abertura com foto em arco, faixas escuras só para o fim de ano e o endereço, latão das luzes do varal como acento. Celular primeiro, com barra fixa de WhatsApp. */
+:root {
+  --paper: #f6f3ee;         /* fundo */
+  --card: #ffffff;
+  --ink: #1e2320;           /* carvão, texto e botões */
+  --ink-2: #5b605a;         /* texto secundário */
+  --line: #e4dfd6;
+  --brass: #b5832c;         /* luzes do varal, detalhes */
+  --brass-ink: #86601b;     /* latão legível em texto pequeno */
+  --leaf: #355a4b;          /* verde discreto, só em ícones */
+  --night: #1b201d;         /* faixa escura */
+  --on-night: #f2eee7;
+  --on-night-2: #bdb8ae;
+  --wa: #1fa855;
+  --shadow: 0 22px 44px -26px rgba(30, 35, 32, .55);
+
+  --f-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --f-body: "Figtree", "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+  --radius: 16px;
+  --wrap: 1140px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121512; --card: #1a1e1b; --ink: #ece8e1; --ink-2: #a9a79f; --line: #2c312d;
+    --brass: #d9a64b; --brass-ink: #e2b663; --leaf: #8fbfa9; --night: #0b0d0b; --on-night: #f2eee7; --on-night-2: #b3aea4;
+    --wa: #25c264; --shadow: 0 22px 44px -26px rgba(0,0,0,.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #121512; --card: #1a1e1b; --ink: #ece8e1; --ink-2: #a9a79f; --line: #2c312d;
+  --brass: #d9a64b; --brass-ink: #e2b663; --leaf: #8fbfa9; --night: #0b0d0b; --on-night: #f2eee7; --on-night-2: #b3aea4;
+  --wa: #25c264; --shadow: 0 22px 44px -26px rgba(0,0,0,.8);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.6;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--paper); }
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
+figure { margin: 0; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; line-height: 1.04; letter-spacing: -.01em; }
+h2 { font-size: clamp(2rem, 5.2vw, 3.2rem); }
+h3 { font-family: var(--f-body); font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+h1 em, h2 em { font-style: italic; color: var(--brass-ink); }
+p { margin: 0; }
+:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; border-radius: 6px; }
+
+.wrap {
+  max-width: var(--wrap); margin: 0 auto;
+  padding-left: max(18px, env(safe-area-inset-left, 0px));
+  padding-right: max(18px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--brass-ink); }
+.lede { color: var(--ink-2); font-size: clamp(1.06rem, 1.6vw, 1.2rem); max-width: 58ch; }
+.section { padding-block: clamp(56px, 9vw, 104px); }
+.section-head { display: grid; gap: 12px; margin-bottom: clamp(28px, 4vw, 44px); max-width: 720px; }
+
+/* Botões */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font: 700 1.02rem/1 var(--f-body); text-decoration: none; cursor: pointer;
+  min-height: 52px; padding: 0 24px; border-radius: 999px; border: 1.5px solid transparent;
+  transition: transform .15s ease, background-color .15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:active { transform: scale(.98); }
+.btn svg { width: 22px; height: 22px; flex: none; }
+.btn-ink { background: var(--ink); color: var(--paper); }
+.btn-ink svg { color: var(--wa); }
+.btn-wa { background: var(--wa); color: #fff; }
+.btn-line { border-color: var(--ink); color: var(--ink); background: transparent; }
+.btn-brass { background: var(--brass); color: #1b1a16; }
+.btn-ghost-night { border-color: var(--on-night-2); color: var(--on-night); background: transparent; }
+@media (hover: hover) { .btn:hover { transform: translateY(-2px); } }
+
+/* Cabeçalho */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar .wrap { display: flex; align-items: center; gap: 18px; min-height: 62px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+.brand svg { width: 30px; height: 30px; color: var(--brass); flex: none; }
+.brand b { font: 400 1.3rem/1 var(--f-display); letter-spacing: -.005em; }
+.nav { display: flex; gap: 24px; font-weight: 600; font-size: .95rem; }
+.nav a { text-decoration: none; color: var(--ink-2); }
+.nav a:hover { color: var(--ink); }
+.topbar .btn { min-height: 42px; padding: 0 16px; font-size: .92rem; }
+@media (max-width: 940px) { .nav { display: none; } }
+@media (max-width: 560px) { .topbar .btn { display: none; } }
+
+/* Abertura */
+.hero .wrap { display: grid; grid-template-columns: 1fr .92fr; gap: clamp(28px, 5vw, 72px); align-items: center; padding-block: clamp(20px, 5vw, 72px) clamp(36px, 6vw, 80px); }
+.hero-copy { display: grid; gap: 22px; min-width: 0; }
+.hero h1 { font-size: clamp(2.6rem, 7.4vw, 4.9rem); }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.trust { list-style: none; margin: 0; padding: 16px 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .95rem; color: var(--ink-2); }
+.trust b { color: var(--ink); }
+.hero-photos { position: relative; min-width: 0; }
+.hero-photos .main img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; border-radius: 220px 220px var(--radius) var(--radius); box-shadow: var(--shadow); }
+.hero-photos .main { width: 88%; margin-left: auto; }
+.hero-photos .inset {
+  position: absolute; left: 0; bottom: -26px; width: 50%;
+  background: var(--card); padding: 8px 8px 10px; border-radius: 12px; box-shadow: var(--shadow); transform: rotate(-3deg);
+}
+.hero-photos .inset img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; border-radius: 7px; }
+.hero-photos .inset figcaption { font-size: .82rem; font-weight: 600; padding: 7px 4px 0; color: var(--ink-2); }
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-photos { order: -1; }
+  .hero-photos .main { width: 100%; }
+  .hero-photos .main img { aspect-ratio: 5 / 4; border-radius: var(--radius); }
+  .hero-photos .inset { display: none; }
+}
+
+/* Varal de luzes */
+.lights { display: block; width: 100%; height: 40px; color: var(--ink-2); }
+.lights .wire { fill: none; stroke: currentColor; stroke-width: 1; opacity: .4; }
+.lights .bulb { fill: var(--brass); }
+.lights .glow { fill: var(--brass); opacity: .18; }
+@media (prefers-reduced-motion: no-preference) {
+  .lights .glow { animation: twinkle 3.8s ease-in-out infinite; }
+  .lights .glow:nth-of-type(3n) { animation-delay: -1.3s; }
+  .lights .glow:nth-of-type(3n+1) { animation-delay: -2.5s; }
+}
+@keyframes twinkle { 50% { opacity: .45; } }
+
+/* Preços */
+.prices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.price { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 24px 22px; display: grid; gap: 4px; align-content: start; }
+.price .who { font-weight: 700; font-size: 1.02rem; }
+.price .from { font-size: .85rem; color: var(--ink-2); margin-top: 10px; }
+.price .val { font: 400 clamp(2.3rem, 5vw, 2.9rem)/1 var(--f-display); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.price .val small { font-size: .5em; vertical-align: .55em; margin-right: 3px; }
+.price .when { font-size: .9rem; color: var(--ink-2); margin-top: 6px; }
+.price-notes { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; font-size: .97rem; color: var(--ink-2); }
+.price-notes li { padding-left: 18px; position: relative; }
+.price-notes li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); }
+.price-notes b { color: var(--ink); }
+.prices-cta { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+@media (max-width: 760px) {
+  .prices { grid-template-columns: 1fr; gap: 10px; }
+  .price { grid-template-columns: 1fr auto; align-items: end; padding: 18px 20px; }
+  .price .from { margin-top: 0; }
+  .price .val { grid-column: 2; grid-row: 1 / span 3; text-align: right; }
+  .price-notes { grid-template-columns: 1fr; }
+}
+
+/* Faixa de fim de ano */
+.night { background: var(--night); color: var(--on-night); }
+.night .lights { color: var(--on-night-2); }
+.night .eyebrow { color: var(--brass); }
+.night h2 em { color: var(--brass); }
+.season .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 5vw, 64px); align-items: center; padding-block: clamp(44px, 7vw, 88px); }
+.season h2 { margin: 12px 0 16px; }
+.season p { color: var(--on-night-2); max-width: 56ch; }
+.dates { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; padding: 0; list-style: none; }
+.dates li { display: grid; justify-items: center; min-width: 96px; padding: 12px 14px 10px; border: 1px solid rgba(255,255,255,.16); border-radius: 12px; }
+.dates b { font: 400 2.2rem/1 var(--f-display); color: var(--brass); }
+.dates span { font-size: .8rem; color: var(--on-night-2); margin-top: 4px; }
+.season .offer { color: var(--on-night); font-size: 1.05rem; margin-bottom: 22px; }
+.season .offer b { font: 400 1.6rem/1 var(--f-display); color: var(--brass); }
+.season-photo img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; border-radius: var(--radius); }
+.season .note { font-size: .92rem; margin-top: 16px; }
+@media (max-width: 860px) { .season .wrap { grid-template-columns: 1fr; } }
+
+/* Passeio pela casa */
+.tour { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(40px, 6vw, 72px); counter-reset: stop; }
+.stop { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(18px, 4vw, 56px); align-items: center; }
+.stop:nth-child(even) .stop-photo { order: 2; }
+.stop-photo { border-radius: var(--radius); overflow: hidden; background: var(--line); }
+.stop-photo button { all: unset; display: block; cursor: zoom-in; width: 100%; }
+.stop-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.stop-text { display: grid; gap: 10px; min-width: 0; }
+.stop-text::before { counter-increment: stop; content: "Parada " counter(stop) " de 6"; font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--brass-ink); }
+.stop-text h3 { font: 400 clamp(1.7rem, 3.4vw, 2.3rem)/1.08 var(--f-display); }
+.stop-text p { color: var(--ink-2); max-width: 46ch; }
+@media (max-width: 760px) { .stop { grid-template-columns: 1fr; } .stop:nth-child(even) .stop-photo { order: 0; } }
+
+/* História */
+.story { background: var(--card); border-block: 1px solid var(--line); }
+.story .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+.story-photos { position: relative; padding-bottom: 36px; }
+.story-photos .then { width: 78%; border-radius: 6px; box-shadow: var(--shadow); border: 8px solid #fff; transform: rotate(-2.5deg); }
+.story-photos .then-cap { position: absolute; left: 10px; top: -14px; z-index: 1; background: var(--ink); color: var(--paper); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 10px; border-radius: 4px; transform: rotate(-2.5deg); }
+.story-photos .now { position: absolute; right: 0; bottom: 0; width: 46%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; border: 6px solid var(--card); box-shadow: var(--shadow); }
+.story-text { display: grid; gap: 16px; }
+.story-text p { color: var(--ink-2); max-width: 58ch; }
+.house-event { margin-top: 10px; padding: 20px 22px; border-radius: var(--radius); background: var(--paper); border: 1px solid var(--line); display: grid; gap: 10px; justify-items: start; }
+.house-event b { color: var(--ink); }
+@media (max-width: 860px) { .story .wrap { grid-template-columns: 1fr; } .story-photos { max-width: 520px; } }
+
+/* Eventos */
+.events { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.events li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: .98rem; }
+.weekday { margin-top: 28px; display: grid; grid-template-columns: 1fr auto; gap: 18px 32px; align-items: center; padding: 26px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--line); }
+.weekday p { color: var(--ink-2); margin-top: 6px; }
+@media (max-width: 720px) { .weekday { grid-template-columns: 1fr; } }
+
+/* Incluso e combinados */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px, 3vw, 34px); display: grid; gap: 16px; align-content: start; }
+.panel h2 { font-size: clamp(1.7rem, 3.2vw, 2.2rem); }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.checks li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start; }
+.checks svg { width: 20px; height: 20px; color: var(--leaf); margin-top: 4px; }
+.checks small { display: block; color: var(--ink-2); font-size: .92rem; }
+@media (max-width: 820px) { .split { grid-template-columns: 1fr; } }
+
+/* Como funciona */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.steps li { display: grid; gap: 8px; align-content: start; padding-top: 20px; border-top: 2px solid var(--ink); }
+.steps li::before { counter-increment: step; content: "Passo " counter(step); font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--brass-ink); }
+.steps p { color: var(--ink-2); }
+@media (max-width: 820px) { .steps { grid-template-columns: 1fr; } }
+
+/* Orçamento */
+.quote { background: var(--card); border-block: 1px solid var(--line); }
+.quote .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(26px, 5vw, 64px); }
+.quote-copy { display: grid; gap: 14px; align-content: start; }
+form.qf { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-weight: 700; font-size: .95rem; }
+.field input, .field select, .field textarea {
+  font: 500 1rem/1.4 var(--f-body); color: var(--ink); background: var(--paper);
+  border: 1.5px solid var(--line); border-radius: 12px; padding: 13px 14px; width: 100%; min-height: 50px;
+}
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--ink); }
+.field textarea { min-height: 88px; resize: vertical; }
+.qf .btn { grid-column: 1 / -1; }
+.qf .fine { grid-column: 1 / -1; font-size: .9rem; color: var(--ink-2); }
+.estimate { grid-column: 1 / -1; font-size: .98rem; background: var(--paper); border-radius: 12px; padding: 12px 14px; }
+@media (max-width: 860px) { .quote .wrap { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { form.qf { grid-template-columns: 1fr; } }
+
+/* Galeria */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.gallery button { all: unset; cursor: zoom-in; display: block; border-radius: 10px; overflow: hidden; min-width: 0; background: var(--line); }
+.gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+
+/* Dúvidas */
+.faq { display: grid; gap: 8px; max-width: 840px; }
+.faq details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0 20px; }
+.faq summary { cursor: pointer; list-style: none; padding: 17px 0; font-weight: 700; font-size: 1.04rem; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 400 1.6rem/1 var(--f-display); color: var(--brass-ink); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding: 0 0 18px; color: var(--ink-2); max-width: 66ch; }
+
+/* Onde fica */
+.where .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(26px, 5vw, 64px); align-items: center; padding-block: clamp(48px, 8vw, 92px); }
+.where h2 { margin: 12px 0 14px; }
+.where address { font-style: normal; font-size: 1.18rem; line-height: 1.5; }
+.contact-list { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+.contact-list li { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.contact-list span { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--on-night-2); min-width: 92px; }
+.contact-list a { font-weight: 600; text-underline-offset: 4px; text-decoration-color: var(--brass); overflow-wrap: anywhere; }
+.where-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.where figure img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; border-radius: var(--radius); }
+@media (max-width: 860px) { .where .wrap { grid-template-columns: 1fr; } .where figure img { aspect-ratio: 4 / 3; } }
+
+footer { background: var(--night); color: var(--on-night-2); border-top: 1px solid rgba(255,255,255,.08); font-size: .9rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; padding-block: 24px; }
+
+/* Barra fixa no celular e botão flutuante no computador */
+.mbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 70; display: none; gap: 10px;
+  padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+  background: color-mix(in srgb, var(--paper) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+}
+.mbar .btn { flex: 1; min-height: 50px; padding: 0 12px; font-size: .98rem; }
+.mbar .btn-line { flex: .7; }
+.wa-float {
+  position: fixed; z-index: 70; right: calc(22px + env(safe-area-inset-right, 0px)); bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+  width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--wa); color: #fff; box-shadow: 0 12px 28px -10px rgba(0,0,0,.45);
+}
+.wa-float svg { width: 32px; height: 32px; }
+@media (max-width: 760px) {
+  .mbar { display: flex; }
+  .wa-float { display: none; }
+  footer .wrap { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* Visualizador de fotos */
+.lightbox { position: fixed; inset: 0; z-index: 90; background: rgba(10, 12, 10, .94); display: grid; place-items: center; padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.lightbox figure { display: grid; gap: 12px; justify-items: center; max-width: min(1100px, 100%); }
+.lightbox img { max-height: 80vh; width: auto; border-radius: 8px; }
+.lightbox figcaption { color: #ece8e1; font-weight: 600; text-align: center; }
+.lb-btn { position: absolute; background: rgba(255,255,255,.14); color: #fff; border: 0; width: 48px; height: 48px; border-radius: 50%; font-size: 1.6rem; cursor: pointer; display: grid; place-items: center; }
+.lb-close { top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); }
+.lb-prev { left: calc(10px + env(safe-area-inset-left, 0px)); top: 50%; transform: translateY(-50%); }
+.lb-next { right: calc(10px + env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.53 1.74 6.5L3 29l6.68-1.75A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.62c-2.03 0-4-.55-5.73-1.58l-.41-.24-3.96 1.04 1.06-3.86-.27-.4A10.6 10.6 0 0 1 5.4 16c0-5.86 4.77-10.63 10.64-10.63 5.86 0 10.6 4.77 10.6 10.63 0 5.86-4.74 10.62-10.6 10.62Zm5.83-7.96c-.32-.16-1.9-.94-2.19-1.04-.3-.11-.51-.16-.72.16-.21.32-.83 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.08 1.3 3.3.16.2 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.46.2 2 .12.61-.09 1.9-.78 2.16-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="i-palm" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M33 58c1-13 0-25-2-35"/><path d="M31 23c-6-6-15-6-21-1"/><path d="M31 23c-3-8-10-13-18-13"/><path d="M31 23c2-8 8-14 17-14"/><path d="M31 23c6-4 16-3 22 4"/><path d="M31 23c1 6-2 13-8 17"/><path d="M31 23c4 4 6 10 5 16"/></g></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Eco Espaço e Lazer, início">
+      <svg aria-hidden="true"><use href="#i-palm"/></svg>
+      <b>Eco Espaço &amp; Lazer</b>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#precos">Preços</a>
+      <a href="#passeio">A casa</a>
+      <a href="#historia">Nossa história</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#onde-fica">Onde fica</a>
+    </nav>
+    <a class="btn btn-ink" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero saber mais." href="https://wa.me/5511973382873" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Casa Verde Alta · Zona Norte de SP</span>
+        <h1>Clima de chácara, <em>sem pegar estrada.</em></h1>
+        <p class="lede">Um quintal tropical escondido no bairro, com palmeira, jardim, salão coberto e churrasqueira com forno a lenha. Para festas de até 150 convidados, perto de casa.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-wa" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero agendar uma visita." href="https://wa.me/5511973382873" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar uma visita
+          </a>
+          <a class="btn btn-line" href="#precos">Ver preços</a>
+        </div>
+        <ul class="trust">
+          <li>Fins de semana a partir de <b>R$ 1.200</b></li>
+          <li><b>Até 150</b> convidados</li>
+          <li>Área <b>coberta</b> e ao ar livre</li>
+        </ul>
+      </div>
+      <div class="hero-photos">
+        <figure class="main">
+          <img src="img/hero-jardim-palmeira-640.jpg" srcset="img/hero-jardim-palmeira-640.jpg 640w, img/hero-jardim-palmeira.jpg 900w" sizes="(max-width: 860px) 100vw, 45vw" alt="Jardim tropical com palmeira, bananeiras e caminho de pedras sob céu azul" width="900" height="1200" fetchpriority="high">
+        </figure>
+        <figure class="inset">
+          <img src="img/salao-coberto-640.jpg" alt="Salão coberto com vigas de madeira e mesas com toalha" width="640" height="853" loading="lazy">
+          <figcaption>O salão coberto, ao lado do jardim</figcaption>
+        </figure>
+      </div>
+    </div>
+    <svg class="lights" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+  </section>
+
+  <section class="section" id="precos" style="padding-top:clamp(32px,5vw,56px)">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Preços</span>
+        <h2>Quanto custa a sua festa</h2>
+        <p class="lede">Sábado ou domingo, com turno de até 6 horas. O valor final depende da data: mande a sua no WhatsApp e respondemos com o valor certinho.</p>
+      </div>
+      <div class="prices">
+        <div class="price"><span class="who">Até 50 convidados</span><span class="from">a partir de</span><span class="val"><small>R$</small>1.200</span><span class="when">sábado ou domingo</span></div>
+        <div class="price"><span class="who">Até 100 convidados</span><span class="from">a partir de</span><span class="val"><small>R$</small>1.500</span><span class="when">sábado ou domingo</span></div>
+        <div class="price"><span class="who">Até 150 convidados</span><span class="from">a partir de</span><span class="val"><small>R$</small>1.800</span><span class="when">sábado ou domingo</span></div>
+      </div>
+      <ul class="price-notes">
+        <li><b>Sexta à noite:</b> a partir de R$ 1.000 (até 50 convidados).</li>
+        <li><b>Durante a semana:</b> consulte. Ótimo para grupos, aulas e encontros.</li>
+        <li><b>Sábados de dezembro e vésperas de feriado</b> têm valor especial.</li>
+        <li><b>Inclui</b> mesas, cadeiras, cozinha de apoio, churrasqueira, forno a lenha e limpeza depois.</li>
+      </ul>
+      <div class="prices-cta">
+        <a class="btn btn-ink" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero saber o valor para a minha data." href="https://wa.me/5511973382873" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar minha data</a>
+        <a class="btn btn-line" href="#orcamento">Montar orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="night season" id="dezembro" aria-labelledby="t-dez">
+    <svg class="lights" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Fim de ano 2026</span>
+        <h2 id="t-dez">Natal e Réveillon em família, <em>no meio do verde</em></h2>
+        <p>Junte todo mundo num quintal com jardim, churrasqueira, forno a lenha e salão coberto, sem ninguém precisar arrumar a casa nem pegar estrada. É só uma família por data.</p>
+        <ul class="dates" aria-label="Datas especiais">
+          <li><b>24</b><span>dez · quinta</span></li>
+          <li><b>25</b><span>dez · sexta</span></li>
+          <li><b>31</b><span>dez · quinta</span></li>
+        </ul>
+        <p class="offer">A partir de <b>R$ 2.000</b> · turno de 8 horas</p>
+        <a class="btn btn-brass" data-wa="Olá! Vim pelo site e quero saber sobre o Natal/Réveillon em família no Eco Espaço & Lazer." href="https://wa.me/5511973382873" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>Reservar Natal ou Réveillon
+        </a>
+        <p class="note">Confraternização de fim de ano? Os sábados de dezembro são os mais procurados. Chame cedo para ver as datas.</p>
+      </div>
+      <figure class="season-photo">
+        <img src="img/area-gourmet-640.jpg" srcset="img/area-gourmet-640.jpg 640w, img/area-gourmet.jpg 900w" sizes="(max-width: 860px) 100vw, 42vw" alt="Área gourmet com churrasqueira, forno a lenha, bar e buffet montado" loading="lazy" width="900" height="1200">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="passeio">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Um passeio pela casa</span>
+        <h2>Do portão ao forno a lenha</h2>
+        <p class="lede">O caminho que os seus convidados fazem quando chegam. Toque nas fotos para ampliar.</p>
+      </div>
+      <ol class="tour">
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/corredor-entrada.jpg" data-cap="Corredor de entrada"><img src="img/corredor-entrada-640.jpg" alt="Corredor de entrada com cerca viva de um lado e plantas do outro" loading="lazy" width="640" height="853"></button></div>
+          <div class="stop-text"><h3>A chegada pelo corredor verde</h3><p>Da rua, um corredor coberto entre a cerca viva e as plantas já avisa que a festa vai ser diferente.</p></div>
+        </li>
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/patio-vista-coberta.jpg" data-cap="Pátio com palmeira e jardim tropical"><img src="img/patio-vista-coberta-640.jpg" alt="Pátio com palmeira, bananeiras e piso de pedra" loading="lazy" width="640" height="853"></button></div>
+          <div class="stop-text"><h3>O pátio da palmeira</h3><p>O coração da casa. Palmeira alta, bananeiras, helicônias e luzes de jardim que acendem quando escurece. É aqui que todo mundo tira foto.</p></div>
+        </li>
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/salao-coberto.jpg" data-cap="Salão coberto"><img src="img/salao-coberto-640.jpg" alt="Salão coberto com telhado aparente, vigas de madeira e mesas com toalha" loading="lazy" width="640" height="853"></button></div>
+          <div class="stop-text"><h3>O salão coberto</h3><p>Telha aparente, vigas de madeira, folhagens penduradas e ventilador de teto. Cabe a mesa da família inteira, com o jardim logo ao lado.</p></div>
+        </li>
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/area-gourmet.jpg" data-cap="Churrasqueira, forno a lenha e bar"><img src="img/area-gourmet-640.jpg" alt="Área gourmet com churrasqueira de tijolo, forno a lenha, balcão de bar e buffet montado" loading="lazy" width="640" height="853"></button></div>
+          <div class="stop-text"><h3>Churrasqueira, forno a lenha e bar</h3><p>Churrasqueira de tijolo, forno para pizza e balcão de bar em granito, com placas antigas e discos na parede. O cheiro de churrasco chega antes do convite.</p></div>
+        </li>
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/patio-area-relogios.jpg" data-cap="Pátio do guarda-sol e área dos relógios"><img src="img/patio-area-relogios-640.jpg" alt="Pátio com guarda-sol colorido, mesas e área coberta com parede de relógios" loading="lazy" width="640" height="853"></button></div>
+          <div class="stop-text"><h3>O lado do sol</h3><p>Guarda-sol, mesas no pátio e, logo atrás, a área coberta com a parede de relógios. Se chover, a festa passa para os salões cobertos sem perder a vista do jardim.</p></div>
+        </li>
+        <li class="stop">
+          <div class="stop-photo"><button type="button" data-lb="img/cozinha-apoio.jpg" data-cap="Cozinha de apoio"><img src="img/cozinha-apoio-640.jpg" alt="Cozinha de apoio com fogão, geladeira, pia e armários" loading="lazy" width="640" height="743"></button></div>
+          <div class="stop-text"><h3>Os bastidores</h3><p>Cozinha completa com fogão, geladeira e bancada para o seu buffet, salão de apoio perto dos banheiros e uma sala de descanso para quem precisa de um respiro.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="story section" id="historia">
+    <div class="wrap">
+      <div class="story-photos">
+        <span class="then-cap">O quintal em 2007</span>
+        <img class="then" src="img/quintal-2007.jpg" alt="Foto antiga do quintal, com piso claro, canteiros pequenos e cobertura metálica" loading="lazy" width="800" height="516">
+        <img class="now" src="img/patio-guarda-sol-640.jpg" alt="O pátio hoje, com palmeira, jardim e guarda-sol" loading="lazy" width="640" height="853">
+      </div>
+      <div class="story-text">
+        <span class="eyebrow">Nossa história</span>
+        <h2>Uma casa do bairro que <em>virou ponto de encontro</em></h2>
+        <p>O Eco Espaço &amp; Lazer está há muitos anos na Casa Verde Alta. A foto antiga é do quintal em 2007, quando ainda era um pátio de piso claro e canteiros pequenos.</p>
+        <p>De lá para cá, o jardim cresceu e vieram a churrasqueira, o forno a lenha e os salões. Continua sendo uma casa de família, cuidada de perto por quem mora no bairro e conhece os vizinhos.</p>
+        <p>É por isso que aqui a festa tem cara de quintal de casa, só que maior.</p>
+        <div class="house-event">
+          <span class="eyebrow">Eventos da casa</span>
+          <h3>De vez em quando, a casa abre as portas para todo mundo</h3>
+          <p>Já rolou o <b>Flashback Sunset</b>: anos 70, 80 e 90 no quintal, das 14h às 22h, com porções, feira de expositores e campanha do agasalho. Quer saber quando vai ter o próximo?</p>
+          <a class="btn btn-line" data-wa="Olá! Vim pelo site e quero saber do próximo evento aberto do Eco Espaço & Lazer." href="https://wa.me/5511973382873" target="_blank" rel="noopener">Quero saber do próximo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="eventos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Eventos</span>
+        <h2>Do primeiro aniversário às bodas de ouro</h2>
+        <p class="lede">Você monta a festa dentro do seu orçamento: traz o seu buffet ou usa os nossos parceiros.</p>
+      </div>
+      <ul class="events">
+        <li>Aniversários</li><li>Festa infantil</li><li>15 anos</li><li>Confraternização de empresa</li><li>Casamento pequeno</li>
+        <li>Chá revelação</li><li>Chá de bebê</li><li>Batizado</li><li>Bodas</li><li>Aniversário de 60, 70 e 80 anos</li>
+        <li>Evento de igreja</li><li>Festa junina</li><li>Formatura</li>
+      </ul>
+      <div class="weekday">
+        <div>
+          <h3>Durante a semana, o espaço também é seu</h3>
+          <p>Aulas de dança e yoga, células e encontros de igreja, oficinas, ensaios fotográficos no jardim e gravação de vídeo e podcast. Aluguel por encontro para grupos fixos.</p>
+        </div>
+        <a class="btn btn-line" data-wa="Olá! Vim pelo site e tenho interesse no espaço durante a semana para um grupo/aula." href="https://wa.me/5511973382873" target="_blank" rel="noopener">Falar sobre grupos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="O que está incluso e combinados da casa">
+    <div class="wrap split">
+      <div class="panel">
+        <span class="eyebrow">O que está incluso</span>
+        <h2>Chegou, montou, festejou</h2>
+        <ul class="checks">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>A casa inteira no seu turno<small>Até 6 horas, de dia ou à noite, conforme a data.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Mesas e cadeiras</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Cozinha de apoio, churrasqueira e forno a lenha</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Limpeza depois da festa</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Opção com montagem e mais tempo para decorar<small>Pergunte na hora do orçamento.</small></span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">Combinados da casa</span>
+        <h2>Festa boa e vizinho tranquilo</h2>
+        <ul class="checks">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Música alta até as 22h<small>Depois, a festa continua com som baixo na área dos fundos da casa.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Pode trazer seu buffet e sua bebida<small>Se preferir, indicamos parceiros de buffet, churrasco e decoração.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alguns carros cabem na frente da casa<small>Consulte. A rua é tranquila, de bairro residencial.</small></span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Contrato simples, com tudo por escrito</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="como-funciona" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Da primeira mensagem à data garantida</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Conte sobre a festa</h3><p>Mande no WhatsApp a data, o tipo de evento e quantos convidados. Respondemos com a disponibilidade e o valor do seu dia.</p></li>
+        <li><h3>Venha conhecer</h3><p>Visita com hora marcada para ver o espaço de perto. Se não puder vir, fazemos o tour por videochamada.</p></li>
+        <li><h3>Reserve sua data</h3><p>A data fica garantida com um sinal por Pix, e o restante é pago até 7 dias antes da festa. Tudo combinado em contrato.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="quote section" id="orcamento">
+    <div class="wrap">
+      <div class="quote-copy">
+        <span class="eyebrow">Orçamento</span>
+        <h2>Monte seu pedido em 30 segundos</h2>
+        <p class="lede">Preencha e toque em enviar. A mensagem abre pronta no WhatsApp, é só mandar.</p>
+        <p style="color:var(--ink-2)">Prefere falar direto? <a href="https://wa.me/5511973382873" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer." target="_blank" rel="noopener" style="font-weight:700">(11) 97338-2873</a></p>
+      </div>
+      <form class="qf" id="qf" novalidate>
+        <div class="field"><label for="q-nome">Seu nome</label><input id="q-nome" name="nome" autocomplete="given-name" placeholder="Ex.: Ana"></div>
+        <div class="field"><label for="q-data">Data desejada</label><input id="q-data" name="data" type="date"></div>
+        <div class="field">
+          <label for="q-tipo">Tipo de evento</label>
+          <select id="q-tipo" name="tipo">
+            <option>Aniversário</option>
+            <option>Festa infantil</option>
+            <option>Confraternização</option>
+            <option>Natal ou Réveillon em família</option>
+            <option>Casamento</option>
+            <option>Chá revelação ou chá de bebê</option>
+            <option>Evento de igreja</option>
+            <option>Grupo ou aula durante a semana</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="q-conv">Convidados</label>
+          <select id="q-conv" name="convidados">
+            <option value="Até 50">Até 50</option>
+            <option value="De 51 a 100">De 51 a 100</option>
+            <option value="De 101 a 150">De 101 a 150</option>
+            <option value="Ainda não sei">Ainda não sei</option>
+          </select>
+        </div>
+        <p class="estimate" id="estimate" aria-live="polite">Fim de semana, até 50 convidados: a partir de <b>R$ 1.200</b></p>
+        <div class="field full"><label for="q-obs">Algo mais? (opcional)</label><textarea id="q-obs" name="obs" placeholder="Horário que imagina, se vai ter churrasco, buffet..."></textarea></div>
+        <button class="btn btn-wa" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</button>
+        <p class="fine">A data só fica garantida depois da confirmação e do sinal.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="galeria">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Galeria</span>
+        <h2>Mais fotos da casa</h2>
+      </div>
+      <div class="gallery">
+        <button type="button" data-lb="img/hero-jardim-palmeira.jpg" data-cap="Jardim com palmeira"><img src="img/hero-jardim-palmeira-640.jpg" alt="Jardim com palmeira, bananeiras e caminho de pedras" loading="lazy" width="640" height="853"></button>
+        <button type="button" data-lb="img/patio-guarda-sol.jpg" data-cap="Pátio com guarda-sol"><img src="img/patio-guarda-sol-640.jpg" alt="Pátio com palmeira, guarda-sol e mesas brancas" loading="lazy" width="640" height="853"></button>
+        <button type="button" data-lb="img/salao-coberto.jpg" data-cap="Salão coberto"><img src="img/salao-coberto-640.jpg" alt="Salão coberto com vigas de madeira e mesas com toalha" loading="lazy" width="640" height="853"></button>
+        <button type="button" data-lb="img/area-gourmet.jpg" data-cap="Churrasqueira, forno a lenha e bar"><img src="img/area-gourmet-640.jpg" alt="Área gourmet com churrasqueira, forno a lenha e bar" loading="lazy" width="640" height="853"></button>
+        <button type="button" data-lb="img/patio-vista-coberta.jpg" data-cap="Pátio visto da área coberta"><img src="img/patio-vista-coberta-640.jpg" alt="Pátio com palmeira visto da área coberta" loading="lazy" width="640" height="853"></button>
+        <button type="button" data-lb="img/salao-apoio.jpg" data-cap="Salão de apoio"><img src="img/salao-apoio-640.jpg" alt="Salão de apoio azulejado com sofá e mesas" loading="lazy" width="640" height="725"></button>
+        <button type="button" data-lb="img/cozinha-apoio.jpg" data-cap="Cozinha de apoio"><img src="img/cozinha-apoio-640.jpg" alt="Cozinha de apoio com fogão, geladeira e armários" loading="lazy" width="640" height="743"></button>
+        <button type="button" data-lb="img/sala-descanso.jpg" data-cap="Sala de descanso"><img src="img/sala-descanso-640.jpg" alt="Sala de descanso com sofás, mesa de centro e pôsteres de cinema" loading="lazy" width="800" height="682"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="duvidas" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Quantas pessoas cabem?</summary><p>Recebemos eventos de até 150 convidados. Me conta quantos você espera que eu te mostro a melhor forma de montar.</p></details>
+        <details><summary>Quanto custa?</summary><p>Sábado ou domingo, a partir de R$ 1.200 para até 50 convidados, R$ 1.500 para até 100 e R$ 1.800 para até 150. Sexta à noite a partir de R$ 1.000. Durante a semana, consulte. O valor final depende da data.</p></details>
+        <details><summary>Qual é o horário da festa?</summary><p>O turno é de até 6 horas, de dia ou à noite, conforme a data. Qual horário você imagina?</p></details>
+        <details><summary>Pode som alto?</summary><p>Música alta até as 22h. Depois, a festa pode continuar com som baixo na área dos fundos da casa, porque estamos num bairro residencial e respeitamos os vizinhos.</p></details>
+        <details><summary>Posso levar meu buffet e minha bebida?</summary><p>Pode, sim. A cozinha de apoio, a churrasqueira e o forno a lenha ficam à disposição. Se quiser, também indicamos parceiros.</p></details>
+        <details><summary>E se chover?</summary><p>Temos salão coberto e um salão protegido com lona e visores transparentes, que fecha contra chuva e vento sem perder a vista do jardim.</p></details>
+        <details><summary>Tem estacionamento?</summary><p>Não temos estacionamento próprio, mas alguns carros cabem na frente da casa (consulte). A rua é tranquila, de bairro residencial.</p></details>
+        <details><summary>Como reservo a data?</summary><p>Depois de conhecer o espaço, a data fica garantida com um sinal por Pix, e o saldo é pago até 7 dias antes. Fazemos um contrato simples, com caução devolvida depois da vistoria. Consulte também o pagamento no cartão.</p></details>
+        <details><summary>Dá para visitar antes?</summary><p>Claro. A visita é com hora marcada pelo WhatsApp. Se você não puder vir, fazemos uma videochamada mostrando cada ambiente.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="night where" id="onde-fica" aria-labelledby="t-onde">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Onde fica</span>
+        <h2 id="t-onde">Na Casa Verde Alta, <em>Zona Norte</em></h2>
+        <address>Rua Alexandre de Miranda, 41<br>Casa Verde Alta · São Paulo/SP</address>
+        <ul class="contact-list">
+          <li><span>WhatsApp</span><a href="https://wa.me/5511973382873" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer." target="_blank" rel="noopener">(11) 97338-2873</a></li>
+          <li><span>E-mail</span><a href="mailto:ecoespacoelazer@gmail.com">ecoespacoelazer@gmail.com</a></li>
+          <li><span>Facebook</span><a href="https://www.facebook.com/ecoespacoelazer" target="_blank" rel="noopener">/ecoespacoelazer</a></li>
+        </ul>
+        <div class="where-ctas">
+          <a class="btn btn-brass" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero agendar uma visita." href="https://wa.me/5511973382873" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar visita</a>
+          <a class="btn btn-ghost-night" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Alexandre+de+Miranda%2C+41%2C+Casa+Verde+Alta%2C+S%C3%A3o+Paulo+SP" target="_blank" rel="noopener">Google Maps</a>
+          <a class="btn btn-ghost-night" href="https://waze.com/ul?q=Rua%20Alexandre%20de%20Miranda%2041%20S%C3%A3o%20Paulo&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/patio-vista-coberta-640.jpg" srcset="img/patio-vista-coberta-640.jpg 640w, img/patio-vista-coberta.jpg 900w" sizes="(max-width: 860px) 100vw, 45vw" alt="Pátio do Eco Espaço & Lazer com palmeira e jardim" loading="lazy" width="900" height="1200">
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano">2026</span> Eco Espaço &amp; Lazer · Eventos, natureza e bem-estar</span>
+    <span>Rua Alexandre de Miranda, 41 · Casa Verde Alta · São Paulo/SP</span>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Contato rápido">
+  <a class="btn btn-wa" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero saber mais." href="https://wa.me/5511973382873" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="btn btn-line" href="#precos">Preços</a>
+</div>
+<a class="wa-float" data-wa="Olá! Vim pelo site do Eco Espaço & Lazer e quero saber mais." href="https://wa.me/5511973382873" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lb-btn lb-close" type="button" aria-label="Fechar">×</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Foto anterior">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-btn lb-next" type="button" aria-label="Próxima foto">›</button>
+</div>
+
+<script>
+(function () {
+  var PHONE = "5511973382873";
+  function waUrl(t) { return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(t); }
+  // Cada botão abre o WhatsApp com uma mensagem pronta que diz que veio do site
+  document.querySelectorAll("[data-wa]").forEach(function (a) { a.href = waUrl(a.getAttribute("data-wa")); });
+
+  // Varal de luzes
+  document.querySelectorAll(".lights").forEach(function (svg) {
+    var ns = "http://www.w3.org/2000/svg", n = 24;
+    var w = document.createElementNS(ns, "path"); w.setAttribute("class", "wire"); w.setAttribute("d", "M0 4 Q300 40 600 4 T1200 4"); svg.appendChild(w);
+    for (var i = 0; i < n; i++) {
+      var x = (i + .5) * (1200 / n), t = (x % 600) / 600, y = 4 + 2 * (1 - t) * t * 36 + 5;
+      [["glow", 8], ["bulb", 3.2]].forEach(function (c) { var e = document.createElementNS(ns, "circle"); e.setAttribute("class", c[0]); e.setAttribute("cx", x); e.setAttribute("cy", y); e.setAttribute("r", c[1]); svg.appendChild(e); });
+    }
+  });
+
+  // Orçamento: mostra o valor de referência e monta a mensagem do WhatsApp
+  var PRICE = { "Até 50": "R$ 1.200", "De 51 a 100": "R$ 1.500", "De 101 a 150": "R$ 1.800" };
+  var conv = document.getElementById("q-conv"), tipo = document.getElementById("q-tipo"), est = document.getElementById("estimate");
+  function updateEstimate() {
+    if (tipo.value.indexOf("Natal") === 0) { est.innerHTML = "Natal e Réveillon: a partir de <b>R$ 2.000</b>, turno de 8 horas"; return; }
+    if (tipo.value.indexOf("Grupo") === 0) { est.innerHTML = "Grupos e aulas durante a semana: valor sob consulta"; return; }
+    var p = PRICE[conv.value];
+    est.innerHTML = p ? "Fim de semana, " + conv.value.toLowerCase() + " convidados: a partir de <b>" + p + "</b>" : "Fins de semana a partir de <b>R$ 1.200</b>";
+  }
+  conv.addEventListener("change", updateEstimate); tipo.addEventListener("change", updateEstimate);
+  document.getElementById("qf").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var v = function (id) { return (document.getElementById(id).value || "").trim(); };
+    var d = v("q-data"), dt = "a definir";
+    if (d) { var p = d.split("-"); dt = p[2] + "/" + p[1] + "/" + p[0]; }
+    var msg = "Olá! Vim pelo site do Eco Espaço & Lazer e quero um orçamento." +
+      (v("q-nome") ? "\nNome: " + v("q-nome") : "") + "\nData: " + dt + "\nEvento: " + v("q-tipo") + "\nConvidados: " + v("q-conv") +
+      (v("q-obs") ? "\nObs.: " + v("q-obs") : "");
+    var a = document.createElement("a"); a.href = waUrl(msg); a.target = "_blank"; a.rel = "noopener";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  // Visualizador de fotos
+  var lb = document.getElementById("lb"), img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap");
+  var items = [].slice.call(document.querySelectorAll("[data-lb]")), idx = 0, last = null;
+  function show(i) { idx = (i + items.length) % items.length; var it = items[idx]; img.src = it.getAttribute("data-lb"); img.alt = it.querySelector("img").alt; cap.textContent = it.getAttribute("data-cap") || ""; }
+  items.forEach(function (it, i) { it.addEventListener("click", function () { last = it; show(i); lb.hidden = false; lb.querySelector(".lb-close").focus(); }); });
+  function close() { lb.hidden = true; if (last) last.focus(); }
+  lb.querySelector(".lb-close").addEventListener("click", close);
+  lb.querySelector(".lb-prev").addEventListener("click", function () { show(idx - 1); });
+  lb.querySelector(".lb-next").addEventListener("click", function () { show(idx + 1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+  document.addEventListener("keydown", function (e) { if (lb.hidden) return; if (e.key === "Escape") close(); if (e.key === "ArrowLeft") show(idx - 1); if (e.key === "ArrowRight") show(idx + 1); });
+  var sx = null;
+  lb.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1)); sx = null; });
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
